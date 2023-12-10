@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajaa-Faidah</title>
+
+  <link rel="icon" type="image/x-icon" href="" />
+
+  <!-- font awesome link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap link  -->
+  <link rel="stylesheet" href="css/plugin/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="css/plugin/bootstrap-icons.min.css">
+
+  <!-- IF LANG == EN -->
+  <!-- <link rel="stylesheet" href="css/plugin/bootstrap.min.css"> -->
+  <!-- END IF -->
+
+  <!-- animate link  -->
+  <link rel="stylesheet" href="css/plugin/animate.css" />
+
+  <!-- flat picker -->
+  <link rel="stylesheet" href="css/plugin/flatpickr.min.css">
+
+  <!-- owl-carouse -->
+  <link rel="stylesheet" href="css/plugin/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/plugin/owl.theme.default.min.css">
+
+  <!-- fancybox -->
+  <link rel="stylesheet" href="css/plugin/jquery.fancybox.min.css">
+
+  <!-- select link -->
+  <link rel="stylesheet" href="css/plugin/nice-select.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- IF LANG == EN -->
+  <!-- <link rel="stylesheet" href="css/style.ltr.css" /> -->
+  <!-- END IF -->
+</head>
+
+<body>
+
+  <section class="bg padding unmargin">
+    <div class="container d-flex justify-content-center">
+      <div class="contacts ">
+        <div class="phone contact">
+          <a href="tel: +212 6 00 00 00 00"><i class="fas fa-phone-alt"></i> +212604400</a>
+        </div>
+        <div class="phone contact">
+          <a href="tel: +212 6 00 00 00 00"><i class="fas fa-phone-alt"></i> +212600000000</a>
+        </div>
+        <div class="email contact">
+          <a href="mailto:1ahmedhelal1@gmail.com"><i class="fa-solid fa-envelope"></i> companyMail@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="navbar navbar-expand-lg py-1" id="nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="index.html">
+        <img src="images/Logo-02.png" alt="">
+      </a>
+      <div class=" navbar-collapse">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <div class="nav-header d-flex justify-content-between align-items-center px-4 py-4">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">
+              <img src="images/Logo-02.png" alt="">
+            </a>
+            <i class="fas fa-close close" id="close"></i>
+          </div>
+          <li class="nav-item mx-lg-3 mx-4">
+            <a class="nav-link " aria-current="page" href="index.html">الصفحة الرئيسية</a>
+          </li>
+          <li class="nav-item mx-lg-3 mx-4">
+            <a class="nav-link active" href="#about">نبذة</a>
+          </li>
+          <li class="nav-item mx-lg-3 mx-4">
+            <a class="nav-link" href="#articles">المقالات</a>
+          </li>
+          <li class="nav-item mx-lg-3 mx-4">
+            <a class="nav-link" href="#courses">الدورات والبرامج</a>
+          </li>
+          <li class="nav-item mx-lg-3 mx-4">
+            <a class="nav-link" href="#videos">الفيديوهات</a>
+          </li>
+        </ul>
+      </div>
+      <div class="actions d-flex justify-content-between gap-lg-3 gap-2">
+        <!-- cart button -->
+        <button class="btn round" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"><i class="fa-solid fa-cart-shopping"></i></button>
+        <!-- /*=========*/ -->
+        <button class="btn btn-primary px-4 round" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">حجز
+          موعد</button>
+      </div>
+      <button class="navbar-toggler open">
+        <i class="fas fa-bars" id="open"></i>
+      </button>
+    </div>
+
+  </nav>
+
+  <!--=============== cart canvas ==================-->
+  <div class="offcanvas offcanvas-start cart-canvas" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">قائمة التسوق</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row gy-3">
+        <div class="col-md-12">
+          <div class="card d-flex justify-content-between align-items-center flex-row bg">
+            <div class="d-flex flex-column">
+              <div class="info text">
+                <h5 class="fw-bold">اسم الدورة</h5>
+                <div class="d-flex gap-1 mt-3">
+                  <h6>السعر:</h6>
+                  <h6>15ريال</h6>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <button class="btn btn-primary round d-flex align-items-center remove-from-cart primary">
+                  <i class="fa-solid fa-trash me-2"></i>
+                  <span>إزالة من السلة</span>
+                </button>
+              </div>
+            </div>
+            <img src="images/header.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card d-flex justify-content-between align-items-center flex-row bg">
+            <div class="d-flex flex-column">
+              <div class="info text">
+                <h5 class="fw-bold">اسم الدورة</h5>
+                <div class="d-flex gap-1 mt-3">
+                  <h6>السعر:</h6>
+                  <h6>15ريال</h6>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <button class="btn btn-primary round d-flex align-items-center remove-from-cart primary">
+                  <i class="fa-solid fa-trash me-2"></i>
+                  <span>إزالة من السلة</span>
+                </button>
+              </div>
+            </div>
+            <img src="images/header.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas-footer p-3 d-flex justify-content-center flex-column">
+      <h5 class="offcanvas-title " id="offcanvasExampleLabel">تفاصيل الدفع</h5>
+      <div class=" d-flex justify-content-between align-items-center my-3">
+        <h4 class="offcanvas-title" id="offcanvasExampleLabel">الإجمالي</h4>
+        <p><span>200</span>ريال</p>
+      </div>
+      <a href="#" class=" btn btn-primary round">الدفع</a>
+    </div>
+  </div>
+  <!-- ============================================ -->
+
+
+
+  <header class="header">
+
+    <div class="modal fade " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5" id="exampleModalToggleLabel">حجز موعد</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-3">
+            <form action="" class="form">
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" />
+                </div>
+                <div class="col-md-6">
+                  <input type="tel" name="tel" class="form-control" placeholder="Your tel" />
+                </div>
+                <div class="col-md-6">
+                  <input type="text" required placeholder="date" value class="form-control flatpickr-input ">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" name="email" class="form-control" placeholder="Your email" />
+                </div>
+                <div class="col-md-12 d-flex justify-content-end">
+                  <a href="#" class="btn btn-primary round padding">حجز<a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="cv">
+    <div class="container">
+      <div class="cv">
+        <img src="" alt="">
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4">
+    <div class="container">
+      <a href="index.html" class="footer-logo ">
+        <img src="images/Logo-02.png" alt="">
+      </a>
+      <hr>
+      <div class="social text-center">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- jQuery script -->
+  <script src="js/plugin/jquery-3.6.1.min.js"></script>
+
+  <!-- bootstrap script -->
+  <script src="js/plugin/bootstrap.bundle.min.js"></script>
+
+  <!-- wow script -->
+  <script src="js/plugin/wow.min.js"></script>
+
+  <!-- owl-carousel -->
+  <script src="js/plugin/owl.carousel.min.js"></script>
+
+  <!-- select script  -->
+  <script src="js/plugin/jquery.nice-select.min.js"></script>
+
+  <!-- fancybox -->
+  <script src="js/plugin/jquery.fancybox.min.js"></script>
+
+  <!-- flat picker -->
+  <script src="js/plugin/flatpickr.min.js"></script>
+  <!-- custom script -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
