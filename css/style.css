@@ -197,7 +197,7 @@ line-height: 1.6875rem;
   flex-wrap: wrap;
   gap: .5rem;
   text-align: center;
-
+  font-size: .9rem;
 }
 
  .contacts .contact i{
@@ -216,7 +216,7 @@ line-height: 1.6875rem;
 /*========================================*/
 
 .nav-item{
-  font-size: 1.1rem;
+  /* font-size: 1rem; */
   font-weight: bold;
 }
 .nav-link{
@@ -833,6 +833,26 @@ form.form{
   border-radius: 3.125rem 0rem 3.125rem 3.125rem;
 }
 
+.form-control::-webkit-input-placeholder{
+  font-size: .9rem;
+}
+
+.form-control::-moz-placeholder{
+  font-size: .9rem;
+}
+
+.form-control:-ms-input-placeholder{
+  font-size: .9rem;
+}
+
+.form-control::-ms-input-placeholder{
+  font-size: .9rem;
+}
+
+.form-control::placeholder{
+  font-size: .9rem;
+}
+
 .form-control:focus {
   border-color: var(--active);
   box-shadow: 0 0 0 0.25rem #ea73407e;
@@ -909,7 +929,9 @@ footer hr{
 
 
 
-
+[type=email], [type=number], [type=tel], [type=url] {
+  direction: rtl !important;
+}
 
 
 
@@ -920,6 +942,9 @@ footer hr{
 =================================================*/
 
 @media (max-width: 991px){
+  .modal-dialog {
+    max-width: 80% !important;
+}
   .landing{
     height: auto !important;
   }
@@ -998,6 +1023,9 @@ header .landing .text {
 }
 
 @media (max-width: 625px){
+  .modal-dialog {
+    max-width: 90% !important;
+}
   form.form {
     padding: 2rem .5rem;
 }
