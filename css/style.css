@@ -14,8 +14,32 @@
   --black: #000000;
   --grey: #777;
 }
-
+@font-face {
+  font-family: "tajwal";
+  src: url("../font/ArbFONTS-Tajawal-Black.ttf");
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "tajwal";
+  src: url("../font/ArbFONTS-Tajawal-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "tajwal";
+  src: url("../font/ArbFONTS-Tajawal-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "tajwal";
+  src: url("../font/ArbFONTS-Tajawal-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
+  font-family: tajwal;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -206,9 +230,9 @@ line-height: 1.6875rem;
 .float-icon:before {
   content: "";
   position: absolute;
-  border: 5px solid #3f696789;
-  inset: -5px;
-  box-shadow: 0 0 0 5px #3f696745;
+  border: 6px solid #3f696789;
+  inset: -6px;
+  box-shadow: 0 0 0 6px #3f696745;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -249,6 +273,11 @@ line-height: 1.6875rem;
   margin-right: auto;
 }
 
+
+
+.modal-body .form{
+  padding: 5rem 3rem;
+}
 /*==================================================
 ================== contacts ========================
 ===================================================*/
@@ -527,7 +556,7 @@ line-height: 1.6875rem;
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: white;
   z-index: 22;
   transition: .3s;
@@ -621,7 +650,7 @@ position: relative;
   transform: translate(-50%,-50%);
   z-index: 22;
   color: var(--active);
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--white);
 }
 
@@ -925,6 +954,7 @@ form.form{
   border: none;
   border-radius: 0;
   border-radius: 3.125rem 0rem 3.125rem 3.125rem;
+  padding: .7rem;
 }
 
 .form-control::-webkit-input-placeholder{
