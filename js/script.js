@@ -1,6 +1,6 @@
 
 
-let nav_links = document.querySelectorAll('.nav-link');
+var nav_links = document.querySelectorAll('.nav-link');
 
 nav_links.forEach((link) => {
   link.addEventListener('click', () => {
@@ -47,38 +47,6 @@ window.addEventListener('scroll', changeBG);
 ================== cart ==========================
 =================================================*/
 
-// let add_btn = document.querySelectorAll('.add-basket');
-// let remove_btn = document.querySelectorAll('.remove-basket');
-// let card = document.querySelectorAll('.card');
-
-
-// add_btn.forEach((btn) => {
-//   btn.addEventListener('click', () => {
-//     btn.classList.remove('active');
-//     btn.nextElementSibling.classList.add('active');
-//   })
-// })
-
-// remove_btn.forEach((btn) => {
-//   btn.addEventListener('click', () => {
-//     btn.classList.remove('active');
-//     btn.previousElementSibling.classList.add('active');
-//   })
-// })
-
-// let remove_from_cart = document.querySelectorAll('.remove-from-cart');
-
-// remove_from_cart.forEach((btn) => {
-//   let grandParent = btn.parentNode.parentNode.parentNode;
-//   btn.addEventListener('click', ()=>{
-//     grandParent.remove();
-//   })
-// });
-
-
-
-
-
 
 let add_btn = document.querySelectorAll('.add-basket');
 let remove_btn = document.querySelectorAll('.remove-basket');
@@ -113,7 +81,6 @@ remove_from_cart.forEach((btn) => {
 
 
 $(".flatpickr-input").flatpickr();
-
 
 
 new WOW().init();
@@ -201,10 +168,47 @@ $('.owl-carousel').owlCarousel({
   }
 })
 
+/*================================================
+=========== counter in statics section ===========
+=================================================*/
 
+let counter_cont = document.querySelectorAll(".counter");
 
+counter_cont.forEach((count)=>{
+  let count_main = count.getAttribute('value');
+  let counter = 0;
 
+  function incCounter(){
+      counter++;
+      if(counter == count_main){
+          clearInterval(stop);
+      }
+      count.innerHTML = counter 
+  }
 
+var stop = setInterval(incCounter , 30);
+})
 
+/*===========================================================*/
 
+// if (nav_links.length > 0) {
+//   let content_sections = document.querySelectorAll('.content');
+
+// change_active = () => {
+//     let height = window.scrollY;
+
+//     content_sections.forEach((section, i) => {
+//         if (height >= section.offsetTop - section.offsetHeight * 0.25) {
+//             nav_links.forEach((link) => {
+//                 link.classList.remove('active');
+//             });
+//             nav_links[i].classList.add('active');
+//         }
+//     });
+// };
+
+// window.addEventListener('scroll', change_active);
+// } else {
+//   console.error('No nav links found or incorrect selector specified.');
+// }
 
