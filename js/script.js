@@ -190,25 +190,3 @@ var stop = setInterval(incCounter , 30);
 })
 
 /*===========================================================*/
-
-// if (nav_links.length > 0) {
-//   let content_sections = document.querySelectorAll('.content');
-
-// change_active = () => {
-//     let height = window.scrollY;
-
-//     content_sections.forEach((section, i) => {
-//         if (height >= section.offsetTop - section.offsetHeight * 0.25) {
-//             nav_links.forEach((link) => {
-//                 link.classList.remove('active');
-//             });
-//             nav_links[i].classList.add('active');
-//         }
-//     });
-// };
-
-// window.addEventListener('scroll', change_active);
-// } else {
-//   console.error('No nav links found or incorrect selector specified.');
-// }
-
