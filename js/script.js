@@ -116,7 +116,7 @@ $(".flatpickr-input").flatpickr();
 
 
 
-
+new WOW().init();
 
 
 

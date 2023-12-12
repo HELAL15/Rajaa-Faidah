@@ -85,10 +85,12 @@ svg {
 .btn:focus {
   outline: none;
   box-shadow: none;
+  
 }
 .btn:hover{
   background-color: var(--active) !important;
   color: white;
+  border-radius: 3.125rem 0rem 3.125rem 3.125rem;
 }
 .primary{
   background-color: var(--active) !important;
@@ -176,6 +178,68 @@ line-height: 1.6875rem;
   color: var(--active) !important;
   background-color: var(--white) !important;
 }
+
+/* float icon */
+.float-icon {
+  background-color: var(--main);
+  position: absolute;
+  inset-inline-end: 50%;
+  z-index: 11;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000 !important;
+  font-size: 14px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.float-icon:before {
+  content: "";
+  position: absolute;
+  border: 5px solid #3f696789;
+  inset: -5px;
+  box-shadow: 0 0 0 5px #3f696745;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.float-icon:hover:before{
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation: ripple-out 1s infinite;
+  animation: ripple-out 1s infinite;
+}
+/* Ripple Out */
+@keyframes ripple-out {
+  100% {
+    inset: -10px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes ripple-out {
+  100% {
+    inset: -10px;
+    opacity: 0;
+  }
+}
+
+
+
+
 /*=========================================
 ==========================================*/
 
@@ -253,6 +317,24 @@ nav.shadow{
   right: 0;
 }
 
+.navbar-toggler ,
+#close{
+  border: none;
+  color: var(--main) ;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  transition: .3s;
+}
+.navbar-toggler:hover ,
+#close:hover{
+  color: var(--active) ;
+}
+.navbar-toggler:focus{
+  outline: none;
+  box-shadow: none;
+}
 
 
 /*=========================================
@@ -539,7 +621,8 @@ position: relative;
   transform: translate(-50%,-50%);
   z-index: 22;
   color: var(--active);
-  font-size: 2rem;
+  font-size: 1.1rem;
+  color: var(--white);
 }
 
 .meetings .item video{
@@ -670,6 +753,17 @@ position: relative;
   line-height: 2;
 }
 
+.offcanvas .offcanvas-footer p{
+  margin-bottom: 0;
+  color: var(--main);
+  font-size: 1.1rem !important;
+  font-weight: 500;
+
+  span{
+    color: var(--active);
+    margin-left: .5rem;
+  }
+}
 /*==================================================
 ===================== rates ========================
 ===================================================*/
@@ -808,7 +902,7 @@ position: relative;
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 0;
-  border-radius: 20px;
+  border-radius: 3.125rem 0rem 3.125rem 3.125rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;

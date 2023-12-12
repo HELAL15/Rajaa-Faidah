@@ -8,6 +8,7 @@ preview-website-img :
 
 <img src='images/website.PNG'>
 
-frontend by : eng/ ahmed helal / https://github.com/HELAL15
+frontend by :
+Eng : Ahmed Helal / https://github.com/HELAL15
 
 portfolio : https://hellal.me/portfolio/
