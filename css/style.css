@@ -621,7 +621,7 @@ line-height: 1.6875rem;
 } */
 .courses .card:hover .add-cart .add-basket.active ,
 .courses .card:hover .add-cart .remove-basket.active{
-  display: block !important;
+  display: flex !important;
 }
 
 .courses .add-cart i{
