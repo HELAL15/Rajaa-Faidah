@@ -99,6 +99,7 @@ svg {
 .btn{
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--main) !important;
   border: none;
   color: white !important;
