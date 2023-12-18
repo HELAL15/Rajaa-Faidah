@@ -190,3 +190,17 @@ var stop = setInterval(incCounter , 30);
 })
 
 /*===========================================================*/
+
+let item_price = document.querySelectorAll('.item-price');
+let total_price = document.querySelector('.total-price');
+
+let total = 0
+
+item_price.forEach((item)=>{
+  let item_val = parseFloat(item.getAttribute('value'));
+  total += item_val
+})
+
+let total_price_final = parseFloat(total_price.getAttribute('value'));
+total_price_final = total
+total_price.textContent = total_price_final

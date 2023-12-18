@@ -304,6 +304,7 @@ line-height: 1.6875rem;
 
 /* ========= cart canvas ==========*/
 .cart-canvas .card{padding: 1rem;}
+.cart-canvas .card h6 span{font-size: unset; margin-bottom: 0;}
 .cart-canvas .card img{width: 100px; max-width: 100px; min-width: 100px;}
 /*========================================*/
 
