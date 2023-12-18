@@ -283,21 +283,20 @@ line-height: 1.6875rem;
 ===================================================*/
 
  .contacts{
-  width: 60%;
+  width: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: .5rem;
   text-align: center;
-  font-size: .9rem;
 }
+
 
  .contacts .contact i{
   margin: 0 .5rem;
 }
 .contacts a{
-  color: var(--main) !important;
+  color: var(--white) !important;
 }
 /*=========================================
 ================= navbar ==================
@@ -1122,9 +1121,8 @@ footer hr{
   nav{
     position: relative;
   }
-  .contacts {
-    width: 90%;
-}
+
+
   .img{
     height: unset;
   }
@@ -1134,10 +1132,14 @@ footer hr{
 .rates .card{
   width: 90%;
 }
-  header .contacts{
+
+
+  .contacts{
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: .5rem;
   }
+
   .sec-title p {
     width: 60%;
 }
