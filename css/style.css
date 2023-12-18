@@ -97,6 +97,8 @@ svg {
   line-height: 0;
 }
 .btn{
+  display: flex;
+  align-items: center;
   background-color: var(--main) !important;
   border: none;
   color: white !important;
@@ -1173,7 +1175,7 @@ header .landing .text {
   }
   .landing .text span.text-w {
     position: absolute;
-    top: 22%;
+    top: 24%;
     left: 11%;
     transform: translate(0%);
     font-size: 1.6rem;
