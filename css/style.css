@@ -1149,6 +1149,12 @@ header .landing .text {
 }
 
 @media (max-width: 625px){
+
+  .modal-body .form{
+    padding: 4rem 1rem;
+  }
+
+
   .modal-dialog {
     max-width: 90% !important;
 }
