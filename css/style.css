@@ -339,6 +339,10 @@ nav.shadow{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.256);
 }
 
+.navbar {
+  --bs-navbar-padding-y: 0.3rem;
+}
+
 .navbar-collapse{
   position: unset;
 }
@@ -369,12 +373,18 @@ nav.shadow{
 /*=========================================
 ================= header ==================
 ==========================================*/
-
+header{
+  background: url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .landing{
   height: calc(100vh - 125px) !important;;
   width:100%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .nav-header{
@@ -383,7 +393,7 @@ nav.shadow{
 
 .header {
   position:relative;
-  background: #3F6967 ;
+  /* background: #3F6967 ; */
 }
 
 
@@ -464,7 +474,7 @@ nav.shadow{
 }
 
 header .landing .text{
-  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .text-w{
   color: var(--white) !important;
@@ -1066,12 +1076,15 @@ footer hr{
 =================================================*/
 
 @media (max-width: 991px){
+  .navbar {
+    --bs-navbar-padding-y: 0rem;
+  }
   .modal-dialog {
     max-width: 80% !important;
 }
-  .landing{
-    height: auto !important;
-  }
+.landing{
+  height: calc(100vh - 120px) !important;
+}
   form.form {
     padding: 2rem 1rem;
 }
@@ -1145,16 +1158,39 @@ footer hr{
     width: 60%;
 }
 header .landing .text {
-  padding-left: 0rem;
+  padding-right: 0rem;
+  margin-top: -1rem;
 }
 }
 
 @media (max-width: 625px){
+  .landing{
+    height: calc(100vh - 120px) !important;
+  }
+  .landing .row{
+    margin-top: 0 !important;
+  }
+  .landing .text span.text-w {
+    position: absolute;
+    top: 22%;
+    left: 11%;
+    transform: translate(0%);
+    font-size: 1.6rem;
+  }
+  .landing .img {
+    width: 40%;
+    border-radius: 1.5rem;
+  }
+
 
   .modal-body .form{
     padding: 4rem 1rem;
   }
 
+  .btns .btn{
+    padding-right: .8rem !important;
+    padding-left: .8rem !important;
+  }
 
   .modal-dialog {
     max-width: 90% !important;
