@@ -383,7 +383,7 @@ header{
   background-repeat: no-repeat;
 }
 .landing{
-  height: calc(100vh - 125px) !important;;
+  /* height: calc(100vh - 125px) !important; */
   width:100%;
   margin: 0;
   padding: 0;
@@ -396,12 +396,12 @@ header{
 
 .header {
   position:relative;
-  /* background: #3F6967 ; */
 }
 
 
 .waves {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 30vh;
   min-height: 100px;
@@ -481,7 +481,7 @@ header{
 }
 header .landing .text {
   padding-right: 3rem;
-  margin-bottom: 9rem;
+  margin-bottom: 3rem;
   z-index: 22222;
 }
 .text-w{
