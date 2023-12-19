@@ -1100,8 +1100,11 @@ footer hr{
   .modal-dialog {
     max-width: 80% !important;
 }
+.landing .row {
+  margin-top: -2rem !important;
+}
 .landing{
-  height: calc(100vh - 120px) !important;
+  height: calc(100vh - 80px) !important;
 }
   form.form {
     padding: 2rem 1rem;
@@ -1177,7 +1180,7 @@ footer hr{
 }
 header .landing .text {
   padding-right: 0rem;
-  margin-top: -1rem;
+  margin-top: -3rem;
   margin-bottom: 0rem;
 }
 }
@@ -1192,17 +1195,18 @@ header .landing .text {
     width: 100px;
   }
 
-  .landing{
-    height: calc(100vh - 120px) !important;
-  }
-  .landing .row{
+
+  /* .landing{
+    height: auto !important;
+  } */
+  /* .landing .row{
     margin-top: 0 !important;
-  }
+  } */
   .landing .text span.text-w {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 11%;
-    transform: translate(0% , -25%);
+    transform: translate(-7% , -25%);
     font-size: 1.6rem;
 }
   .landing .img {
@@ -1248,6 +1252,43 @@ header .landing .text {
 .sec-title p {
   width: 100%;
 }
+
+.btn.padding {
+  padding: 0.625rem .8rem !important;
+}
+.courses .add-cart {
+  bottom: 15%;
+}
+.courses .card:hover .add-cart .add-basket.active, .courses .card:hover .add-cart .remove-basket.active {
+  display: flex !important;
+  font-size: .8rem;
+}
+.courses .add-cart i {
+  margin-right: 0.2rem;
+}
+.courses .card .title {
+  font-size: 1rem;
+}
+
+.courses .card {
+  min-height: 170px;
+  max-height: 170px;
+}
+
+
+.meetings .item {
+  height: 250px;
+}
+.meetings .owl-item.active:nth-child(odd) > div {
+  height: 250px;
+}
+.meetings .owl-item.active:nth-child(even) > div {
+  height: 250px;
+}
+/* .meetings .owl-item.active.center > div {
+  height: 15rem;
+} */
+
 }
 
 

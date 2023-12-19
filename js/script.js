@@ -71,7 +71,7 @@ remove_btn.forEach((btn) => {
 let remove_from_cart = document.querySelectorAll('.remove-from-cart');
 
 remove_from_cart.forEach((btn) => {
-  let grandParent = btn.parentNode.parentNode.parentNode;
+  let grandParent = btn.parentNode.parentNode.parentNode.parentNode;
   btn.addEventListener('click', () => {
     grandParent.remove();
     updateTotalPrice(); 
@@ -157,6 +157,7 @@ $('.owl-carousel').owlCarousel({
   autoplayTimeout:3500,
   responsive:{
       0:{
+        stagePadding: 50,
           items:1
       },
       600:{
