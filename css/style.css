@@ -476,10 +476,13 @@ header{
   -o-object-fit: cover;
      object-fit: cover;
 }
-
+.landing .row {
+  margin-top: -5rem !important;
+}
 header .landing .text {
   padding-right: 3rem;
-  margin-bottom: 10rem;
+  margin-bottom: 9rem;
+  z-index: 22222;
 }
 .text-w{
   color: var(--white) !important;
@@ -1256,3 +1259,4 @@ header .landing .text {
 
 
 
+}
