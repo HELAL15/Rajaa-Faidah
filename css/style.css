@@ -465,7 +465,7 @@ header{
 
   .img{
   /* height: calc(100vh - 148.5px); */
-  height: calc(100vh - 136.5px);
+  height: calc(100vh - 70px);
   width: 100%;
   border-radius: 3.9375rem ;
   overflow: hidden;
@@ -1195,13 +1195,13 @@ header .landing .text {
   }
   .landing .text span.text-w {
     position: absolute;
-    top: 24%;
+    top: 30%;
     left: 11%;
-    transform: translate(0%);
+    transform: translate(0% , -25%);
     font-size: 1.6rem;
-  }
+}
   .landing .img {
-    width: 40%;
+    width: 55%;
     border-radius: 1.5rem;
   }
 
