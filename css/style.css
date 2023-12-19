@@ -465,7 +465,7 @@ header{
 
   .img{
   /* height: calc(100vh - 148.5px); */
-  height: calc(100vh - 70px);
+  /* height: calc(100vh - 70px); */
   width: 100%;
   border-radius: 3.9375rem ;
   overflow: hidden;
