@@ -377,7 +377,7 @@ nav.shadow{
 ================= header ==================
 ==========================================*/
 header{
-  background: url('../images/background.png');
+  background: url('../images/background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1062,7 +1062,17 @@ footer hr{
 }
 
 
+.copy-right {
+  background-color: #f2f2f2;
+}
 
+.copy-right p{
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.copy-right .smart-logo{
+  width: 120px;
+}
 
 
 
@@ -1168,6 +1178,15 @@ header .landing .text {
 }
 
 @media (max-width: 625px){
+  
+  .copy-right p{
+    margin-bottom: 0;
+    font-size: .8rem;
+  }
+  .copy-right .smart-logo{
+    width: 100px;
+  }
+
   .landing{
     height: calc(100vh - 120px) !important;
   }
