@@ -145,7 +145,7 @@ $('.rates .owl-carousel').owlCarousel({
   }
 })
 
-$('.owl-carousel').owlCarousel({
+$('.meetings .owl-carousel').owlCarousel({
   rtl: rtlValue,
   loop:true,
   center: true,
@@ -165,6 +165,30 @@ $('.owl-carousel').owlCarousel({
       },
       1000:{
           items:5
+      }
+  }
+})
+
+$('.courses .owl-carousel').owlCarousel({
+  rtl: rtlValue,
+  loop:true,
+  center: true,
+  margin:10,
+  navText:["<i class='fa-solid fa-arrow-right mx-2'></i>", "<i class='fa-solid fa-arrow-left mx-2'></i>"],
+  nav:true,
+  dots: false,
+  autoplay:false,
+  autoplayTimeout:3500,
+  responsive:{
+      0:{
+        // stagePadding: 30,
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:4
       }
   }
 })

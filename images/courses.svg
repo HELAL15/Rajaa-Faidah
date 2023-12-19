@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="606.564" height="521.467" viewBox="0 0 606.564 521.467">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_25591" data-name="Path 25591" d="M565.42,295.41c-37.58,59.12-152.06,177.67-262.14,226.06C193.19,473.08,78.71,354.54,41.14,295.41,12.96,251.05-2.56,203.86.35,151.38,2.87,105.79,25.91,61.72,61.94,33.66,97.97,5.62,146.36-5.92,191.16,2.92c47.8,9.42,90.25,42.25,112.13,85.68,21.87-43.43,64.32-76.26,112.13-85.68,44.79-8.84,93.2,2.7,129.22,30.75s59.06,72.13,61.58,117.72c2.9,52.48-12.61,99.67-40.8,144.02Z" fill="#d32f2f"/>
+    </clipPath>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 1920 1200">
+      <image width="1920" height="1200" xlink:href="../images/course3.png" />
+    </pattern>
+  </defs>
+  <g id="Objects" transform="translate(-0.002 -0.003)">
+    <g id="Mask_Group_74" data-name="Mask Group 74" clip-path="url(#clip-path)">
+      <path id="devushka-mariya-lomaga-bryunetka-1331" d="M0,0H830s12.171,108.549,77.171,224.69,140.518,245,140.518,245S972.171,554.431,907.171,672.54,830,937,830,937H0Z" transform="translate(0.002 -13.997)" fill="url(#pattern)"/>
+    </g>
+  </g>
+</svg>
