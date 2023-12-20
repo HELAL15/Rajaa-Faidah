@@ -955,7 +955,7 @@ position: relative;
   align-items: center;
   justify-content: center;
 }
-.statics .card .icon {
+/* .statics .card .icon {
   border-radius: 50%;
   height: 100px;
   width: 100px;
@@ -1070,7 +1070,99 @@ position: relative;
   100% {
     transform: rotate(45deg);
   }
+} */
+
+.statics .card .icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: url('../images/icons/flower.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-animation: configure-clockwise 6s infinite alternate;
+          animation: configure-clockwise 6s infinite alternate;
 }
+@-webkit-keyframes configure-clockwise {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes configure-clockwise {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.statics .card .icon .inner-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-animation: x-configure-clockwise 6s infinite alternate;
+  animation: x-configure-clockwise 6s infinite alternate;
+  -webkit-transform: translate(-50% , -50%);
+  -moz-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  -o-transform: translate(-50% , -50%);
+}
+@-webkit-keyframes x-configure-clockwise {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+}
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+}
+}
+@keyframes x-configure-clockwise {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+}
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+}
+}
+
+
 
 
 .card-p{
@@ -1081,6 +1173,7 @@ position: relative;
 
 .statics .text h3{
   color: var(--main);
+  margin-top: 1rem;
 }
 
 .statics .text h4{
@@ -1195,8 +1288,8 @@ footer{
   justify-content: center;
   width: 100%;
 }
-.footer-logo img{
-  width: 50px;
+.footer-logo img {
+  width: 15%;
 }
  .social{
   display: flex;
@@ -1257,6 +1350,9 @@ footer hr{
 =================================================*/
 
 @media (max-width: 991px){
+  .footer-logo img {
+    width: 25%;
+}
   .navbar {
     --bs-navbar-padding-y: 0rem;
   }
@@ -1349,7 +1445,9 @@ header .landing .text {
 }
 
 @media (max-width: 625px){
-  
+  .footer-logo img {
+    width: 35%;
+}
   .copy-right p{
     margin-bottom: 0;
     font-size: .8rem;
