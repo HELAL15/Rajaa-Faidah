@@ -48,25 +48,16 @@ window.addEventListener('scroll', changeBG);
 =================================================*/
 
 
-let add_btn = document.querySelectorAll('.add-basket');
-let remove_btn = document.querySelectorAll('.remove-basket');
+let add_btn = document.querySelectorAll('.add-cart');
 
 
 add_btn.forEach((btn) => {
   btn.addEventListener('click', () => {
-    btn.classList.remove('active');
-    btn.nextElementSibling.classList.add('active');
+    btn.classList.toggle('active');
     updateTotalPrice(); 
   });
 });
 
-remove_btn.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    btn.classList.remove('active');
-    btn.previousElementSibling.classList.add('active');
-    updateTotalPrice(); 
-  });
-});
 
 let remove_from_cart = document.querySelectorAll('.remove-from-cart');
 
