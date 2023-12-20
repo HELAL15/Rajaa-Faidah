@@ -554,12 +554,12 @@ line-height: 1.6875rem;
 ======================== courses =============================
 =============================================================*/
 
-.courses .card{
+.courses .heart{
   min-height: 345px;
   max-height: 345px;
   overflow: hidden;
 }
-.courses .card img{
+.courses .heart img{
   min-height: 345px;
   max-height: 345px;
   width: 100%;
@@ -567,71 +567,104 @@ line-height: 1.6875rem;
      object-fit: cover;
      transition: .3s;
 }
-.courses .card img:hover{
+.courses .heart img:hover{
   transform: scale(1.1);
 }
-.courses .card .title{
+.courses .heart .title {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
   font-size: 1.3rem;
   color: white;
   z-index: 22;
   transition: .3s;
   font-weight: bold;
 }
-.courses .card:hover .title{
-  opacity: 0;
+.courses .heart:hover .title{
+  display: none;
 }
-.courses .card .overlay{
+.courses .heart .overlay{
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,.5);
+  /* background-color: rgba(0,0,0,.5); */
   z-index: 1;
   transition: .3s;
 }
 
-.courses .card:hover .overlay{
+.courses .heart:hover .overlay{
   top: -100%;
 }
 
 .courses .add-cart{
   position: absolute;
-  bottom: 10%;
+  bottom: 30%;
   right: 50%;
-  transform: translate(50%,50%);
+  transform: translate(50%,-30%);
   width: 100%;
   display: none;
   justify-content: center;
   transition: .3s;
 }
-.courses .card:hover .add-cart{
+.courses .heart:hover .add-cart{
   display: flex !important;
 }
-/* .courses .card.show .add-cart {
+/* .courses .heart.show .add-cart {
   display: flex !important;
 } */
-.courses .card.show .add-cart .add-basket {
+.courses .heart.show .add-cart .add-basket {
   display: none !important;
 }
-.courses .card:hover .add-cart .add-basket,
-.courses .card:hover .add-cart .remove-basket{
+.courses .heart:hover .add-cart .add-basket,
+.courses .heart:hover .add-cart .remove-basket{
   display: none !important;
 }
-/* .courses .card.show .add-cart .remove-basket{
+/* .courses .heart.show .add-cart .remove-basket{
   display: block !important;
 } */
-.courses .card:hover .add-cart .add-basket.active ,
-.courses .card:hover .add-cart .remove-basket.active{
+.courses .heart:hover .add-cart .add-basket.active ,
+.courses .heart:hover .add-cart .remove-basket.active{
   display: flex !important;
 }
 
 .courses .add-cart i{
   margin-right: .5rem;
 }
+
+
+.heart{
+  position: relative;
+  width: 100%;
+  height: 14rem;
+  float: left;
+  /* background: url('../images/course3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+/* .heart:before,
+.heart:after{
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background-color: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+.heart:after{
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin :100% 100%;
+} */
+
+
+
 
 /* =========================================================== 
 ======================== meetings ============================
@@ -644,13 +677,13 @@ line-height: 1.6875rem;
   justify-content: center;
 }
 .meetings .owl-item.active:nth-child(odd) > div {
-  height: 16rem;
+  height: 13rem;
 }
 .meetings .owl-item.active:nth-child(even) > div {
-  height: 16rem;
+  height: 13rem;
 }
 .meetings .owl-item.active.center > div {
-  height: 16rem;
+  height: 13rem;
 }
 
 .meetings .item {
@@ -1305,6 +1338,7 @@ header .landing .text {
 
 
 /*======================================*/
+}
 
 
 
