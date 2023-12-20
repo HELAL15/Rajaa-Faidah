@@ -701,17 +701,17 @@ line-height: 1.6875rem;
   justify-content: center;
 }
 .meetings .owl-item.active:nth-child(odd) > div {
-  height: 13rem;
+  height: 10rem;
 }
 .meetings .owl-item.active:nth-child(even) > div {
-  height: 13rem;
+  height: 10rem;
 }
 .meetings .owl-item.active.center > div {
-  height: 13rem;
+  height: 10rem;
 }
 
 .meetings .item {
-width: 100%;
+width: 90%;
 border-radius: 0.75rem;
 background: var(--grey);
 overflow: hidden;
