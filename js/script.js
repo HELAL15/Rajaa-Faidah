@@ -186,7 +186,7 @@ $('.courses .owl-carousel').owlCarousel({
 
 $('.books .owl-carousel').owlCarousel({
   rtl: rtlValue,
-  loop:true,
+  // loop:true,
   // center: true,
   margin:10,
   navText:["<i class='fa-solid fa-arrow-right mx-2'></i>", "<i class='fa-solid fa-arrow-left mx-2'></i>"],
