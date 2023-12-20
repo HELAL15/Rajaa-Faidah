@@ -1329,9 +1329,23 @@ footer hr{
 .books .owl-carousel .owl-stage-outer {
   overflow: visible !important;
 }
-
+.books .sec-title{
+  align-items: start !important;
+}
+.books .sec-title h3 {
+  font-size: 2rem !important;
+  font-weight: bold;
+}
 .books .sec-title p {
   width: 100%;
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+.books .buy{
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 /*================================================
