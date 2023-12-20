@@ -555,8 +555,8 @@ line-height: 1.6875rem;
 =============================================================*/
 
 .courses .heart{
-  min-height: 345px;
-  max-height: 345px;
+  /* min-height: 345px;
+  max-height: 345px; */
   overflow: hidden;
 }
 .courses .heart img{
