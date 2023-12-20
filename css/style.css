@@ -956,7 +956,6 @@ position: relative;
   justify-content: center;
 }
 .statics .card .icon {
-  background: var(--bg);
   border-radius: 50%;
   height: 100px;
   width: 100px;
@@ -965,15 +964,24 @@ position: relative;
   justify-content: center;
   margin-bottom: 1rem;
   font-size: 2rem;
-  color: var(--main);
   overflow: hidden;
+  background: url('../images/icons/flower.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
-.statics .card .icon img{
-  width: 65%;
-  height: 65%;
+
+.statics .card .icon .inner-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 40%;
+  height: 40%;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 .card-p{
   display: flex;
