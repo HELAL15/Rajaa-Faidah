@@ -1556,6 +1556,15 @@ header .landing .text {
   left: -300px;
 }
 
+.courses .add-cart {
+  top: 12%;
+  left: 11%;
+  transform: translate(40%,-35%);
+  opacity: 0;
+  font-size: 2rem;
+}
+
+
 }
 
 
