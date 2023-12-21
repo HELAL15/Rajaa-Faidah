@@ -1564,6 +1564,9 @@ header .landing .text {
   font-size: 2rem;
 }
 
+.meetings .item {
+  width: 100%;
+}
 
 }
 
