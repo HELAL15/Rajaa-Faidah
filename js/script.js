@@ -245,3 +245,54 @@ $(".book").click(function(){
 $(".book-back").click(function(){
   $(this).parent(".book-wrap").removeClass("flip");
 });
+
+
+/*==================================*/
+
+let array_books_img = [
+  {
+    img: '../images/icons/flower.png',
+    size: 'cover',
+    position: 'center',
+    repeat: 'no-repeat',
+  },
+  {
+    img: '../images/icons/flower1.png',
+    size: 'cover',
+    position: 'center',
+    repeat: 'no-repeat',
+  },
+  {
+    img: '../images/icons/flower2.png',
+    size: 'cover',
+    position: 'center',
+    repeat: 'no-repeat',
+  },
+  {
+    img: '../images/icons/flower3.png',
+    size: 'cover',
+    position: 'center',
+    repeat: 'no-repeat',
+  },
+  {
+    img: '../images/icons/flower4.png',
+    size: 'cover',
+    position: 'center',
+    repeat: 'no-repeat',
+  }
+
+]
+
+console.log(array_books_img.length);
+
+
+  let books_img = document.querySelectorAll('.statics .icon');
+
+books_img.forEach((img, index) => {
+  if (index < array_books_img.length) {
+    img.style.background = `url('${array_books_img[index].img}')`;
+    img.style.backgroundPosition = array_books_img[index].position;
+    img.style.backgroundRepeat = array_books_img[index].repeat;
+    img.style.backgroundSize = array_books_img[index].size;
+  }
+});
