@@ -251,31 +251,31 @@ $(".book-back").click(function(){
 
 let array_books_img = [
   {
-    img: '../images/icons/flower.png',
+    img: 'images/icons/flower.png',
     size: 'cover',
     position: 'center',
     repeat: 'no-repeat',
   },
   {
-    img: '../images/icons/flower1.png',
+    img: 'images/icons/flower1.png',
     size: 'cover',
     position: 'center',
     repeat: 'no-repeat',
   },
   {
-    img: '../images/icons/flower2.png',
+    img: 'images/icons/flower2.png',
     size: 'cover',
     position: 'center',
     repeat: 'no-repeat',
   },
   {
-    img: '../images/icons/flower3.png',
+    img: 'images/icons/flower3.png',
     size: 'cover',
     position: 'center',
     repeat: 'no-repeat',
   },
   {
-    img: '../images/icons/flower4.png',
+    img: 'images/icons/flower4.png',
     size: 'cover',
     position: 'center',
     repeat: 'no-repeat',
