@@ -117,8 +117,8 @@ $('.articles .owl-carousel.article').owlCarousel({
 $('.rates .owl-carousel').owlCarousel({
   rtl: rtlValue,
   loop:true,
-  center: true,
-  margin:40,
+  // center: true,
+  margin:35,
   nav:false,
   dots: true,
   autoplay:false,
@@ -128,7 +128,7 @@ $('.rates .owl-carousel').owlCarousel({
           items:1
       },
       600:{
-          items:1
+          items:2,
       },
       1000:{
           items:3
