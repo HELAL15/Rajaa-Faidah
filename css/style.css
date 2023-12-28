@@ -852,10 +852,16 @@ text-transform: capitalize;
 ===================================================*/
 
 .rates .card {
-  border-radius: 3.75rem 0.75rem;
-  background-color: #3f6967ee;
-  padding: 3rem 4rem;
-  width: 70%;
+  /* border-radius: 3.75rem 0.75rem; */
+  /* background-color: #3f6967ee; */
+  background: url('../images/card.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 2rem;
+  width: 30%;
+  /* height: 100vh; */
+
   overflow: unset !important;
   margin-top: 2rem;
 }
@@ -869,8 +875,10 @@ text-transform: capitalize;
 }
 
 .rates .card .text {
-  color: var(--white);
+  color: var(--main);
   line-height: 2;
+  margin-top: 2rem;
+  font-size: 1.3rem;
 }
 
 .Stars {
@@ -894,7 +902,7 @@ text-transform: capitalize;
 .rating h4,
 .rating h5 {
   line-height: 1.5;
-  color: var(--white);
+  color: var(--primary);
   margin-bottom: 0;
 }
 
@@ -902,6 +910,7 @@ text-transform: capitalize;
   opacity: 0.7;
   font-size: 1.2rem;
   font-weight: 400;
+  color: var(--main);
 }
 
 .rates .item {
@@ -1127,8 +1136,14 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
-
+footer .waves {
+  height: 0vh;
+}
+footer .contacts {
+  margin-bottom: 6rem !important;
+}
 .footer-logo {
   color: var(--white) !important;
   font-size: 2rem;
@@ -1531,6 +1546,10 @@ footer hr {
 
   .meetings .item {
     width: 100%;
+  }
+
+  footer .contacts {
+    margin-bottom: 2rem !important;
   }
 }
 
