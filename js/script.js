@@ -22,7 +22,8 @@ open_nav.click(function () {
 })
 
 close_nav.click(function () {
-    nav.removeClass('active')
+    nav.removeClass('active')//jq
+    // nav.classList.remove('active')//js
 });
 
 $(document).on('click' , (e)=>{
@@ -128,10 +129,10 @@ $('.rates .owl-carousel').owlCarousel({
           items:1
       },
       600:{
-          items:2,
+          items:1,
       },
       1000:{
-          items:3
+          items:1
       }
   }
 })
@@ -296,3 +297,7 @@ books_img.forEach((img, index) => {
     img.style.backgroundSize = array_books_img[index].size;
   }
 });
+
+
+
+

@@ -159,7 +159,23 @@ section a.padding {
   overflow: hidden;
   position: relative !important;
 }
-
+.whats-app {
+  position: fixed !important;
+  bottom: 1rem;
+  /* right: 1rem; */
+  inset-inline-start: 1rem;
+  display: block;
+  width: 50px !important;
+  height: 50px !important;
+  z-index: 222;
+  background-color: #18BB1D;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white) !important;
+  font-size: 1.5rem;
+}
 .sec-title {
   text-align: center;
   display: flex;
@@ -614,31 +630,18 @@ text-transform: capitalize;
   opacity: 1;
 }
 
-/* .courses .heart:hover .add-cart{
-  display: flex !important;
-} */
-/* .courses .heart.show .add-cart {
-  display: flex !important;
-} */
-/* .courses .heart.show .add-cart .add-basket {
-  display: none !important;
-} */
-/* .courses .heart:hover .add-cart .add-basket,
-.courses .heart:hover .add-cart .remove-basket{
-  display: none !important;
-} */
-/* .courses .heart.show .add-cart .remove-basket{
-  display: block !important;
-} */
-/* .courses .heart:hover .add-cart .add-basket.active ,
-.courses .heart:hover .add-cart .remove-basket.active{
-  display: flex !important;
-} */
+.courses .desc{
+  color: var(--active);
+  /* color: #8f7b6f59; */
+}
+.courses .desc .price{
+  color: var(--main);
+}
 
-/* .courses .add-cart i{
-  margin-right: .5rem;
-} */
-
+/* <use xlink:href="#gentle-wave" x="48" y="0" fill="#934f7776" />
+<use xlink:href="#gentle-wave" x="48" y="3" fill="#b174625d" />
+<use xlink:href="#gentle-wave" x="48" y="5" fill="#62757465" />
+<use xlink:href="#gentle-wave" x="48" y="7" fill="#8f7b6f59" /> */
 .heart {
   position: relative;
   width: 100%;
@@ -854,17 +857,52 @@ text-transform: capitalize;
 .rates .card {
   /* border-radius: 3.75rem 0.75rem; */
   /* background-color: #3f6967ee; */
-  background: url('../images/card.jpg');
-  background-size: cover;
+  /* background: url('../images/card.jpg'); */
+  /* background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  padding: 4rem 2rem;
-  width: 100%;
+  background-repeat: no-repeat; */
+  background-color: var(--bg);
+  padding: 2rem 2rem;
+  border-radius: 35px;
+  border: 2px solid var(--grey) !important;
+  margin: 1rem;
+  width: 65%;
   /* height: 100vh; */
 
   overflow: unset !important;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  position: relative;
+
+    margin-bottom: 6rem;
+
+
 }
+
+.rates .card::after ,
+.rates .card::before {
+  content: '';
+  position: absolute;
+  bottom: -5rem;
+  left: 3rem;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 80px 80px 0 80px;
+  border-color: var(--bg) transparent transparent transparent;
+  transform: rotate(0deg);
+}
+.rates .card::before {
+  bottom: -5.2rem;
+  left: 2.9rem;
+  border-width: 82px 82px 0 82px;
+  border-color: var(--grey) transparent transparent transparent;
+}
+/* .rates  .owl-carousel .owl-stage-outer{
+    overflow: visible !important;
+} */
+
+
+
 .rates .card svg {
   position: absolute;
   top: -7%;
@@ -1057,9 +1095,9 @@ text-transform: capitalize;
   margin-top: 1rem;
 }
 
-.contact-us .social a {
+/* .contact-us .social a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.256);
-}
+} */
 
 .contact-us .our-num {
   background-color: var(--main);
@@ -1132,10 +1170,11 @@ form.form .btn {
 
 footer {
   /* background-color: var(--main); */
-  background: url('../images/background.jpg');
-  background-size: cover;
+  /* background: url('../images/background.jpg'); */
+  /* background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background-color: var(--white);
   position: relative;
 }
 footer .waves {
@@ -1169,6 +1208,7 @@ footer .contacts {
   font-size: 1.3rem;
   font-weight: bold;
   background-color: var(--white);
+  border: 4px solid var(--active);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1176,11 +1216,54 @@ footer .contacts {
   align-items: center;
   justify-content: center;
   transition: 0.3s;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.social a.one {
+border-color: var(--primary) !important;
+  color: var(--primary) !important;
+}
+.social a.two{
+  border-color: var(--a) !important;
+  color: var(--a) !important;
+}
+.social a.three{
+  border-color: #934F77 !important;
+  color: #934F77 !important;
+}
+.social a.four{
+  border-color: var(--main) !important;
+  color:  var(--main) !important;
+}
+.social a.five{
+  border-color: var(--grey) !important;
+  color: var(--grey) !important;
+}
+.social a.sex{
+  border-color: var(--active) !important;
+  color: var(--active) !important;
 }
 
+
+
+
+
+
+
 .social a:hover {
-  color: var(--active) !important ;
+  /* color: var(--active) !important ; */
   transform: scale(1.1);
+}
+.contacts a {
+  color: var(--main) !important;
+}
+
+.contacts .contact i{
+  color: var(--main);
+}
+
+footer .contacts {
+  width: 55%;
+  justify-content: space-evenly;
 }
 
 footer hr {
@@ -1551,6 +1634,33 @@ footer hr {
   footer .contacts {
     margin-bottom: 2rem !important;
   }
+
+  footer .social {
+    flex-wrap: wrap;
+    gap: 2.9rem;
+}
+
+
+
+
+.rates .card::after ,
+.rates .card::before {
+  content: '';
+  position: absolute;
+  bottom: -5rem;
+  left: 25%;
+}
+.rates .card::before {
+  bottom: -5.2rem;
+  left: 25%;
+  border-width: 82px 82px 0 82px;
+  border-color: var(--grey) transparent transparent transparent;
+}
+
+
+
+
+
 }
 
 /*======================================*/
