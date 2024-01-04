@@ -1666,7 +1666,10 @@ footer hr {
     gap: 2.9rem;
 } */
 
-
+.whats-app {
+  bottom: 3rem;
+  inset-inline-start: 2rem;
+}
 
 /* 
 .rates .card::after ,
