@@ -119,7 +119,7 @@ $('.rates .owl-carousel').owlCarousel({
   rtl: rtlValue,
   loop:true,
   // center: true,
-  margin:10,
+  margin:20,
   nav:false,
   dots: true,
   autoplay:false,

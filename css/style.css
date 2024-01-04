@@ -876,19 +876,19 @@ text-transform: capitalize;
 .rates .card::after, .rates .card::before {
   content: '';
   position: absolute;
-  bottom: -4rem;
+  bottom: -2.2rem;
   left: 3rem;
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-width: 70px 70px 0 70px;
+  border-width: 40px 40px 0 40px;
   border-color: var(--bg) transparent transparent transparent;
   transform: rotate(0deg);
 }
 .rates .card::before {
-  bottom: -4.3rem;
+  bottom: -2.4rem;
   left: 3.1rem;
-  border-width: 68px 68px 0 68px;
+  border-width: 38px 38px 0 38px;
   border-color: var(--grey) transparent transparent transparent;
 }
 /* .rates .card::after ,
@@ -927,7 +927,7 @@ text-transform: capitalize;
 
 .rates .card .text {
   color: var(--main);
-  margin-top: 0.3rem;
+  margin-top: 1rem;
   font-size: 1rem;
 }
 .Stars {
