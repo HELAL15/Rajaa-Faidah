@@ -861,7 +861,7 @@ text-transform: capitalize;
   padding: 1rem;
   border-radius: 35px;
   border: 2px solid var(--grey) !important;
-  margin: 1rem;
+  /* margin: 1rem; */
   /* width: 65%; */
   /* height: 100vh; */
 
@@ -927,11 +927,9 @@ text-transform: capitalize;
 
 .rates .card .text {
   color: var(--main);
-  line-height: 2;
-  margin-top: 2rem;
-  font-size: 1.3rem;
+  margin-top: 0.3rem;
+  font-size: 1rem;
 }
-
 .Stars {
   margin-top: 2rem;
   --percent: calc(var(--rating) / 5 * 100%);
