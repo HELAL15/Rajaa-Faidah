@@ -324,7 +324,15 @@ section a.padding {
   min-width: 100px;
 }
 /*========================================*/
-
+.actions.dropdown-menu.show {
+  background: transparent !important;
+  border: none !important;
+}
+.dropdown-menu.show {
+  display: block;
+  background: unset !important;
+  border: none !important;
+}
 .nav-item {
   /* font-size: 1rem; */
   font-weight: bold;
