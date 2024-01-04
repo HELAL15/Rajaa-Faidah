@@ -140,7 +140,7 @@ $('.rates .owl-carousel').owlCarousel({
 $('.meetings .owl-carousel').owlCarousel({
   rtl: rtlValue,
   loop:true,
-  center: true,
+  // center: true,
   margin:10,
   navText:["<i class='fa-solid fa-arrow-right mx-2'></i>", "<i class='fa-solid fa-arrow-left mx-2'></i>"],
   nav:true,
@@ -156,7 +156,7 @@ $('.meetings .owl-carousel').owlCarousel({
           items:2
       },
       1000:{
-          items:5
+          items:4
       }
   }
 })

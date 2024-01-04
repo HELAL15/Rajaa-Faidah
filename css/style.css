@@ -161,9 +161,9 @@ section a.padding {
 }
 .whats-app {
   position: fixed !important;
-  bottom: 1rem;
+  bottom: 10rem;
   /* right: 1rem; */
-  inset-inline-start: 1rem;
+  inset-inline-start: 4rem;
   display: block;
   width: 50px !important;
   height: 50px !important;
@@ -676,18 +676,21 @@ text-transform: capitalize;
   align-items: center;
   justify-content: center;
 }
-.meetings .owl-item.active:nth-child(odd) > div {
-  height: 10rem;
+/* .meetings .owl-item.active:nth-child(odd) > div {
+  height: 16rem;
 }
 .meetings .owl-item.active:nth-child(even) > div {
-  height: 10rem;
-}
+  height: 16rem;
+} */
 .meetings .owl-item.active.center > div {
-  height: 10rem;
+  height: 100%;
 }
-
+.meetings .item .card{
+  height: 100% !important;
+}
 .meetings .item {
-  width: 90%;
+  /* width: 90%; */
+  height: 16rem;
   border-radius: 0.75rem;
   background: var(--grey);
   overflow: hidden;
@@ -1203,9 +1206,6 @@ footer .contacts {
 }
 .footer-logo img {
   width: 15%;
-  /* box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5); */
-  -webkit-filter: drop-shadow(7px 0px 2px rgba(0, 0, 0, 0.5));
-  filter: drop-shadow(7px 0px 2px rgba(0, 0, 0, 0.5));
 }
 .social {
   display: flex;
@@ -1228,6 +1228,7 @@ footer .contacts {
   justify-content: center;
   transition: 0.3s;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  margin: auto;
 }
 .social a.one {
 border-color: var(--primary) !important;
@@ -1350,7 +1351,7 @@ footer hr {
   height: 100%;
   width: 3%;
   position: absolute;
-  right: 36.3%;
+  right: 30.3%;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -1397,7 +1398,21 @@ footer hr {
 .flip {
   transform: rotateY(-180deg);
 }
+.buy.one{
+  background-color: var(--primary) !important;
+  transition: .3s;
+}
+.buy.one:hover{
+  background-color: var(--main) !important;
 
+}
+.buy.two{
+  background-color: var(--grey) !important;
+  transition: .3s;
+}
+.buy.two:hover{
+  background-color: var(--active) !important;
+}
 .books .owl-carousel .owl-stage-outer {
   overflow: visible !important;
 }
@@ -1646,14 +1661,14 @@ footer hr {
     margin-bottom: 2rem !important;
   }
 
-  footer .social {
+  /* footer .social {
     flex-wrap: wrap;
     gap: 2.9rem;
-}
+} */
 
 
 
-
+/* 
 .rates .card::after ,
 .rates .card::before {
   content: '';
@@ -1666,9 +1681,17 @@ footer hr {
   left: 25%;
   border-width: 82px 82px 0 82px;
   border-color: var(--grey) transparent transparent transparent;
+} */
+
+.social {
+  display: block;
+  -moz-columns: 3;
+       columns: 3;
+  gap: 1rem;
 }
-
-
+.social li{
+  padding: .5rem;
+}
 
 
 

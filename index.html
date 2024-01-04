@@ -83,9 +83,24 @@
         <button class="btn circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
           aria-controls="offcanvasExample"><i class="fa-solid fa-cart-shopping"></i></button>
         <!-- /*=========*/ -->
-        <button class="btn btn-primary px-4 round" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">حجز
-          موعد</button>
+        <!-- <button class="btn btn-primary px-4 round" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">حجز
+          موعد</button> -->
+
+        <div class="dropdown">
+          <button class="btn round px-4 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            حجز موعد
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <button class="btn  px-4 round" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">موعد
+                جلسة</button>
+            </li>
+            <li><a class="dropdown-item" href="#">مقياس التحليل</a></li>
+          </ul>
+        </div>
+
       </div>
+
       <button class="navbar-toggler open">
         <i class="fas fa-bars" id="open"></i>
       </button>
@@ -252,6 +267,7 @@
 
   <header class="header">
     <section class="landing py-5 content" id="home">
+
       <div class="container h-100">
         <div class="row align-items-center gy-5 h-100">
           <div class="col-md-6 wow fadeInUp">
@@ -267,11 +283,6 @@
                 على الشكل الخارجي
                 للنص أو شكل توضع الفقرات في الصفحة التي يقرأها
               </p>
-              <div class="btns d-flex gap-lg-4 gap-2 my-4">
-                <button class="btn prim-btn px-4 round" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">حجز
-                  موعد</button>
-                <a href="#" class="btn prim-out-btn px-4 round">مقياس تحليل الشخصية</a>
-              </div>
             </div>
           </div>
         </div>
@@ -302,16 +313,16 @@
 
         <div class="col-md-12">
           <div class="row align-items-center justify-content-center flex-wrap-reverse gy-4">
-            <div class="col-md-12 col-5 ">
-              <div class="book-btns wow fadeInUp d-flex justify-content-center  gap-2 ">
-                <button class="buy btn main-btn px-4 round" data-bs-target="#exampleModalToggle"
+            <div class=" col-4 ">
+              <div class="book-btns wow fadeInUp d-flex justify-content-center flex-column gap-2 ">
+                <button class="buy btn main-btn px-4 round one" data-bs-target="#exampleModalToggle"
                   data-bs-toggle="modal">حجز
                   موعد</button>
-                <a href="#" class="buy btn main-btn round">مقياس المشاعر </a>
-                <a href="#" class="buy btn main-btn round">شراء الكتاب</a>
+                <a href="#" class="buy btn main-btn round two">مقياس المشاعر </a>
+                <a href="#" class="buy btn main-btn round three">شراء الكتاب</a>
               </div>
             </div>
-            <div class="col-md-12 col-7">
+            <div class=" col-8">
               <div class="wrap wow fadeInUp">
                 <div class="perspective">
                   <div class="book-wrap">
@@ -625,77 +636,79 @@
         <h3>أهم اللقاءات</h3>
       </div>
       <div class="owl-carousel owl-theme">
-        <div class="item video">
-          <a id="image1" data-fancybox="gallary-video" href="images/Landmark2.mp4" class="video">
-            <video src="images/Landmark2.mp4" muted></video>
-            <span class="float-icon">
-              <i class=" fas fa-play "></i>
-            </span>
-          </a>
+
+        <div class="card d-flex flex-column justify-content-center">
+          <h3 class="title my-3 text-center">اسم الدورة</h3>
+          <div class="item video">
+            <a id="image1" data-fancybox="gallary-video" href="images/Landmark2.mp4" class="video">
+              <video src="images/Landmark2.mp4" muted></video>
+              <span class="float-icon">
+                <i class=" fas fa-play "></i>
+              </span>
+            </a>
+          </div>
         </div>
 
-        <div class="item video">
-          <a id="image1" data-fancybox="gallary-video" href="images/Landmark2.mp4" class="video">
-            <video src="images/Landmark2.mp4" muted></video>
-            <span class="float-icon">
-              <i class=" fas fa-play "></i>
-            </span>
-          </a>
+        <div class="card d-flex flex-column justify-content-center">
+          <h3 class="title my-3 text-center">اسم الدورة</h3>
+          <div class="item video">
+            <a id="image1" data-fancybox="gallary-video" href="images/Landmark2.mp4" class="video">
+              <video src="images/Landmark2.mp4" muted></video>
+              <span class="float-icon">
+                <i class=" fas fa-play "></i>
+              </span>
+            </a>
+          </div>
         </div>
 
-        <div class="item video">
-          <a id="image1" data-fancybox="gallary-video" href="images/Landmark2.mp4" class="video">
-            <video src="images/Landmark2.mp4" muted></video>
-            <span class="float-icon">
-              <i class=" fas fa-play "></i>
-            </span>
-          </a>
+        <div class="card d-flex flex-column justify-content-center">
+          <h3 class="title my-3 text-center">اسم الدورة</h3>
+          <div class="item video">
+            <a id="image1" data-fancybox="gallary-video" href="images/Landmark2.mp4" class="video">
+              <video src="images/Landmark2.mp4" muted></video>
+              <span class="float-icon">
+                <i class=" fas fa-play "></i>
+              </span>
+            </a>
+          </div>
         </div>
 
-        <div class="item video">
-          <a id="image1" data-fancybox="gallary-video" href="images/Landmark2.mp4" class="video">
-            <video src="images/Landmark2.mp4" muted></video>
-            <span class="float-icon">
-              <i class=" fas fa-play "></i>
-            </span>
-          </a>
+        <div class="card d-flex flex-column justify-content-center">
+          <h3 class="title my-3 text-center">اسم الدورة</h3>
+          <div class="item video">
+            <a id="image1" data-fancybox="gallary-video" href="images/Landmark2.mp4" class="video">
+              <video src="images/Landmark2.mp4" muted></video>
+              <span class="float-icon">
+                <i class=" fas fa-play "></i>
+              </span>
+            </a>
+          </div>
         </div>
 
-        <div class="item video">
-          <a id="image1" data-fancybox="gallary-video" href="images/Landmark2.mp4" class="video">
-            <video src="images/Landmark2.mp4" muted></video>
-            <span class="float-icon">
-              <i class=" fas fa-play "></i>
-            </span>
-          </a>
+        <div class="card d-flex flex-column justify-content-center">
+          <h3 class="title my-3 text-center">اسم الدورة</h3>
+          <div class="item video">
+            <a id="image1" data-fancybox="gallary-video" href="images/Landmark2.mp4" class="video">
+              <video src="images/Landmark2.mp4" muted></video>
+              <span class="float-icon">
+                <i class=" fas fa-play "></i>
+              </span>
+            </a>
+          </div>
         </div>
 
-        <div class="item video">
-          <a id="image1" data-fancybox="gallary-video" href="images/Landmark2.mp4" class="video">
-            <video src="images/Landmark2.mp4" muted></video>
-            <span class="float-icon">
-              <i class=" fas fa-play "></i>
-            </span>
-          </a>
+        <div class="card d-flex flex-column justify-content-center">
+          <h3 class="title my-3 text-center">اسم الدورة</h3>
+          <div class="item video">
+            <a id="image1" data-fancybox="gallary-video" href="images/Landmark2.mp4" class="video">
+              <video src="images/Landmark2.mp4" muted></video>
+              <span class="float-icon">
+                <i class=" fas fa-play "></i>
+              </span>
+            </a>
+          </div>
         </div>
 
-        <div class="item video">
-          <a id="image1" data-fancybox="gallary-video" href="images/Landmark2.mp4" class="video">
-            <video src="images/Landmark2.mp4" muted></video>
-            <span class="float-icon">
-              <i class=" fas fa-play "></i>
-            </span>
-          </a>
-        </div>
-
-        <div class="item video">
-          <a id="image1" data-fancybox="gallary-video" href="images/Landmark2.mp4" class="video">
-            <video src="images/Landmark2.mp4" muted></video>
-            <span class="float-icon">
-              <i class=" fas fa-play "></i>
-            </span>
-          </a>
-        </div>
 
       </div>
     </div>
@@ -999,25 +1012,26 @@
       <a href="index.html" class="footer-logo wow fadeInUp">
         <img src="images/footer-logo.png" alt="">
       </a>
-      <hr>
-      <div class="social text-center wow fadeInUp">
-        <a href="#" class="one"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="two"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="three"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="four"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="five"><i class="fab fa-snapchat"></i></a>
-        <a href="#" class="sex"><i class="fa-brands fa-linkedin-in"></i></a>
-      </div>
-      <div class="d-flex justify-content-center">
-        <div class="contacts pt-1 mt-4 mb-3 wow fadeInUp">
-          <div class="phone contact">
-            <i class="fas fa-phone-alt"></i>
-            <a href="tel: +212 6 00 00 00 00"> +212604400</a>
-            <span class="mx-2 fs-5">/</span>
-            <a href="tel: +212 6 00 00 00 00"> +212600000000</a>
-          </div>
-          <div class="email contact">
-            <a href="mailto:1ahmedhelal1@gmail.com"><i class="fa-solid fa-envelope"></i> companyMail@gmail.com</a>
+      <div>
+        <ul class="social text-center wow fadeInUp">
+          <li><a href="#" class="one"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" class="two"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" class="three"><i class="fab fa-twitter"></i></a></li>
+          <li> <a href="#" class="four"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#" class="five"><i class="fab fa-snapchat"></i></a></li>
+          <li><a href="#" class="sex"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+        <div class="d-flex justify-content-center">
+          <div class="contacts pt-1 mt-4 mb-3 wow fadeInUp">
+            <div class="phone contact">
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel: +212 6 00 00 00 00"> +212604400</a>
+              <span class="mx-2 fs-5">/</span>
+              <a href="tel: +212 6 00 00 00 00"> +212600000000</a>
+            </div>
+            <div class="email contact">
+              <a href="mailto:1ahmedhelal1@gmail.com"><i class="fa-solid fa-envelope"></i> companyMail@gmail.com</a>
+            </div>
           </div>
         </div>
       </div>
