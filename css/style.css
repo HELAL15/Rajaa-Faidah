@@ -333,6 +333,9 @@ section a.padding {
   background: unset !important;
   border: none !important;
 }
+.w-180{
+  width: 180px !important;
+}
 .nav-item {
   /* font-size: 1rem; */
   font-weight: bold;
@@ -1415,7 +1418,7 @@ footer hr {
 
 }
 .buy.two{
-  background-color: var(--grey) !important;
+  background-color: var(--hover) !important;
   transition: .3s;
 }
 .buy.two:hover{
