@@ -70,7 +70,7 @@ body {
   margin-top: 0 !important;
 }
 section {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 section.bg {
   background-color: var(--bg);
@@ -1316,6 +1316,9 @@ footer hr {
 .books{
   margin-top: 3rem;
 }
+.books .buy {
+  width: 60%;
+}
 .wrap {
   height: 100%;
   /* max-width: 1280px; */
@@ -1464,7 +1467,7 @@ footer hr {
   display: grid;
   -moz-column-break-inside: avoid;
   break-inside: avoid;
-  justify-items: end;
+  justify-items: center;
 }
 
 .main-book-wrap {
@@ -1845,6 +1848,9 @@ footer hr {
 }
 .meetings .owl-item.active:nth-child(even) > div {
   margin-bottom:  0;
+}
+.books .buy {
+  width: 100%;
 }
 }
 
