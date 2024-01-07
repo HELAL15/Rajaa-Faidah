@@ -120,8 +120,9 @@ $('.rates .owl-carousel').owlCarousel({
   loop:true,
   // center: true,
   margin:20,
-  nav:false,
-  dots: true,
+  nav:true,
+  navText:["<i class='fa-solid fa-arrow-right mx-2'></i>", "<i class='fa-solid fa-arrow-left mx-2'></i>"],
+  dots: false,
   autoplay:false,
   autoplayTimeout:3500,
   responsive:{
