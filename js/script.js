@@ -98,7 +98,7 @@ $('.articles .owl-carousel.article').owlCarousel({
   margin:10,
   nav:true,
   dots: true,
-  mouseDrag:false,
+  mouseDrag:true,
   navText:["<i class='fa-solid fa-arrow-right mx-2'></i>", "<i class='fa-solid fa-arrow-left mx-2'></i>"],
   autoplay:false,
   autoplayTimeout:3500,
