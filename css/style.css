@@ -1573,13 +1573,71 @@ footer hr {
   text-align: center
 }
 
+.modal-dialog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content{
+  width: 60%;
+}
 
+.modal-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal .nav-pills .nav-link{
+  border-radius: 25px;
+}
+.modal .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: var(--white) !important;
+  background-color: var(--active);
+}
+.forget-btn{
+  background-color: transparent !important;
+  color: white;
+}
+.recover{
+  display: block !important;
+}
+
+
+#form input {
+  margin: .5rem;
+  text-align: center;
+  font-size: 22px;
+  border: solid 1px var(--grey) !important;
+  box-shadow: 0 0 5px rgb(233, 232, 232) inset !important;
+  outline: none;
+  height: 40px;
+  width: 45px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 3px;
+  margin-bottom: 2rem;
+}
+ #form input:focus {
+  border-color:var(--active) !important;
+}
+ #form input::-moz-selection {
+  background: transparent;
+}
+ #form input::selection {
+  background: transparent;
+}
+.verify{
+  direction: ltr !important;
+}
 
 /*================================================
 ================ media query =====================
 =================================================*/
 
 @media (max-width: 991px) {
+  .modal-content{
+    width: 80%;
+  }
   .footer-logo img {
     width: 25%;
   }
@@ -1607,19 +1665,29 @@ footer hr {
     gap: 3rem;
     margin-top: 1.5rem;
   }
-  .meetings .owl-nav .owl-prev {
+  .meetings .owl-nav .owl-prev ,
+  .articles .owl-nav .owl-prev {
     position: unset;
     right: -4rem;
     top: 45%;
     transform: unset;
   }
 
-  .meetings .owl-nav .owl-next {
+  .meetings .owl-nav .owl-next ,
+  .articles .owl-nav .owl-next {
     position: unset;
     left: -4rem;
     top: 45%;
     transform: unset;
   }
+  .articles .owl-nav{
+      display: flex;
+      justify-content: center;
+  }
+  .navbar-brand {
+    margin: unset !important;
+    width: 35px !important;
+}
   .nav-header {
     display: flex !important;
   }
@@ -1861,6 +1929,11 @@ footer hr {
 .books .buy {
   width: 100%;
 }
+
+.modal-content{
+  width: 100%;
+}
+
 }
 
 /*======================================*/
