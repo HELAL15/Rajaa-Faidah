@@ -734,25 +734,29 @@ text-transform: capitalize;
   object-fit: cover;
 }
 
-.meetings .container {
+.meetings .container ,
+.articles .container {
   position: relative;
 }
 
-.meetings .owl-nav .owl-prev {
+.meetings .owl-nav .owl-prev ,
+.articles .owl-nav .owl-prev {
   position: absolute;
   right: -4rem;
   top: 45%;
   transform: translate(-40%);
 }
 
-.meetings .owl-nav .owl-next {
+.meetings .owl-nav .owl-next ,
+.articles .owl-nav .owl-next {
   position: absolute;
   left: -4rem;
   top: 45%;
   transform: translate(45%);
 }
 
-.meetings .owl-theme .owl-nav [class*='owl-'] {
+.meetings .owl-theme .owl-nav [class*='owl-'],
+.articles .owl-theme .owl-nav [class*='owl-'] {
   color: var(--main) !important;
   width: 40px;
   height: 40px;
@@ -765,7 +769,8 @@ text-transform: capitalize;
   font-weight: 300 !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.256);
 }
-.meetings .owl-theme .owl-nav [class*='owl-']:hover {
+.meetings .owl-theme .owl-nav [class*='owl-']:hover ,
+.articles .owl-theme .owl-nav [class*='owl-']:hover {
   color: var(--active) !important;
   text-decoration: none !important;
 }
@@ -778,7 +783,7 @@ text-transform: capitalize;
   position: relative;
   padding-bottom: 2rem;
 }
-.articles .owl-dots {
+/* .articles .owl-dots {
   position: absolute;
   left: 0;
   bottom: -3rem;
@@ -788,7 +793,7 @@ text-transform: capitalize;
   position: absolute;
   right: 0;
   bottom: -3.7rem;
-}
+} */
 .owl-theme .owl-nav [class*='owl-'] {
   color: var(--main) !important;
   font-size: 1.7rem !important;
