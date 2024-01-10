@@ -1372,7 +1372,7 @@ footer hr {
   height: 100%;
   width: 3%;
   position: absolute;
-  right: 24.3%;
+  left: 24.3%;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -1417,7 +1417,7 @@ footer hr {
   transform: rotateY(-20deg);
 }
 .flip {
-  transform: rotateY(-180deg);
+  transform: rotateY(180deg);
 }
 .buy.one{
   background-color: var(--primary) !important;
