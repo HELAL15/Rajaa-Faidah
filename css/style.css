@@ -405,11 +405,12 @@ header {
   background-repeat: no-repeat;
 }
 .landing {
-  /* height: calc(100vh - 125px) !important; */
+  height: calc(100vh - 50px) !important;
   width: 100%;
   margin: 0;
   padding: 0;
   position: relative;
+  overflow: hidden;
 }
 
 .nav-header {
@@ -419,7 +420,10 @@ header {
 .header {
   position: relative;
 }
-
+/* .header .img img {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+} */
 .waves {
   position: absolute;
   bottom: 0;
@@ -1368,7 +1372,7 @@ footer hr {
   height: 100%;
   width: 3%;
   position: absolute;
-  right: 32.3%;
+  right: 24.3%;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -1424,11 +1428,11 @@ footer hr {
 
 }
 .buy.two{
-  background-color: var(--hover) !important;
+  background-color: var(--active) !important;
   transition: .3s;
 }
 .buy.two:hover{
-  background-color: var(--active) !important;
+  background-color: var(--hover) !important;
 }
 .books .owl-carousel .owl-stage-outer {
   overflow: visible !important;
@@ -1472,7 +1476,7 @@ footer hr {
 
 .main-book-wrap {
   position: relative;
-  width: 35%;
+  width: 45%;
 }
 
 .book-cover {

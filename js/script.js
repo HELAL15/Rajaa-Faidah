@@ -232,9 +232,9 @@ updateTotalPrice();
 
 
 
-$(".book").mouseenter(function(){
-  $(this).parent(".book-wrap").addClass("rotate");
-});
+// $(".book").mouseenter(function(){
+//   $(this).parent(".book-wrap").addClass("rotate");
+// });
 
 $(".book").mouseleave(function(){
   $(this).parent(".book-wrap").removeClass("rotate");
