@@ -404,6 +404,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .landing {
   height: calc(100vh - 50px) !important;
   width: 100%;
@@ -1882,13 +1883,19 @@ footer hr {
   /* .landing .row{
     margin-top: 0 !important;
   } */
-  .landing .text span.text-w {
+  /* .landing .text span.text-w {
     position: absolute;
     top: 25%;
     left: 11%;
     transform: translate(-7%, -25%);
     font-size: 1.6rem;
-  }
+  } */
+  .landing.pt-5 {
+    padding-top: 1rem!important;
+}
+  .text h1, .text h2 {
+    margin: .4rem 0;
+}
   .landing .img {
     width: 55%;
     border-radius: 1.5rem;
@@ -2034,6 +2041,23 @@ footer hr {
 .modal-content{
   width: 100%;
 }
+
+
+header .hero-img {
+  border-width: 10px;
+  border-style: solid;
+  -o-border-image: linear-gradient(to right, var(--active) , var(--main));
+     border-image: linear-gradient(to right, var(--active) , var(--main)); 
+  border-image-slice: 1;
+  border-radius: 25px !important;
+  overflow: hidden;
+  height: 270px;
+  width: 100% !important;
+}
+header .hero-img img{
+  height: auto !important;
+}
+
 
 }
 
