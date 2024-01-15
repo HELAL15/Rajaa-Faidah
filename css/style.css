@@ -1850,7 +1850,7 @@ footer hr {
   }
   header .landing .text {
     padding-right: 0rem;
-    margin-top: -3rem;
+    margin-top: 0rem;
     margin-bottom: 0rem;
   }
   .buy {
@@ -2051,11 +2051,12 @@ header .hero-img {
   border-image-slice: 1;
   border-radius: 25px !important;
   overflow: hidden;
-  height: 270px;
+  /* height: 270px; */
   width: 100% !important;
 }
 header .hero-img img{
   height: auto !important;
+  margin-bottom: -3rem;
 }
 
 
