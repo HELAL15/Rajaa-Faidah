@@ -504,9 +504,9 @@ header .landing .text {
   margin-bottom: 3rem;
   z-index: 22222;
 }
-header .hero-img .waves{
+/* header .hero-img .waves{
   display: none;
-}
+} */
 .text-w {
   color: var(--white) !important;
 }
@@ -2047,14 +2047,13 @@ footer hr {
 
 
 header .hero-img {
-  /* border-width: 10px; */
-  /* border-style: solid;
-  -o-border-image: linear-gradient(to right, var(--active) , var(--main));
-     border-image: linear-gradient(to right, var(--active) , var(--main)); 
+  border-width: 10px;
+  border-style: solid;
+     -o-border-image: linear-gradient(to right,   var(--main)  , #B0715F , #914F75) ;
+        border-image: linear-gradient(to right,   var(--main)  , #B0715F , #914F75) ; 
      border-top: none;
      border-right: none;
      border-left: none;
-     box-shadow: 0 5px 10px -5px #888888; */
      position: relative;
   border-image-slice: 1;
   border-radius: 25px !important;
@@ -2062,14 +2061,14 @@ header .hero-img {
   /* height: 270px; */
   width: 100% !important;
 }
-header .hero-img .waves{
+/* header .hero-img .waves{
   display: block;
   position: absolute;
     width: 100%;
     height: 30vh;
     bottom: -86px;
     left: 0;
-}
+} */
 header .hero-img img{
   height: auto !important;
   margin-bottom: -3rem;
