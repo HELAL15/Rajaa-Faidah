@@ -660,7 +660,7 @@ p.text-w {
   height: 100% !important;
 }
 .meetings .item {
-  height: 16rem;
+  height: 17rem;
   border-radius: 0.75rem;
   background: var(--grey);
   overflow: hidden;
@@ -1987,9 +1987,9 @@ footer hr {
     display: flex;
     flex-direction: column !important;
   }
-  .buy {
+  /* .buy {
     font-size: 0.6rem;
-  }
+  } */
   .courses .add-cart {
     top: 12%;
     left: 11%;
