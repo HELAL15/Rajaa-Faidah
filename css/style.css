@@ -1503,8 +1503,9 @@ footer hr {
   background-color: transparent !important;
   color: white;
   position: absolute;
-    top: 80%;
-    left: 40%;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .recover{
   display: block !important;
