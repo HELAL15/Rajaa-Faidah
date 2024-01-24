@@ -293,11 +293,11 @@
                 type="button" role="tab" aria-controls="pills-signUp" aria-selected="false">إنشاء حساب</button>
             </li>
           </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab"
-              tabindex="0">
+          <div class="tab-content w-100" id="pills-tabContent">
+            <div class="tab-pane fade show active w-100" id="pills-login" role="tabpanel"
+              aria-labelledby="pills-login-tab" tabindex="0">
 
-              <form action="" class="form">
+              <form action="" class="form w-100">
                 <div class="row gy-3">
                   <div class="col-md-6">
                     <input type="email" class="form-control" placeholder="البريد الإلكتروني">
@@ -307,10 +307,6 @@
                   </div>
                   <div class="col-md-12 d-flex justify-content-center align-items-center">
                     <button class="btn main-btn round">الدخول</button>
-                  </div>
-                  <div class="forget-password text-center">
-                    <!-- <a href="#" class="text-white">هل نسيت كلمة المرور؟</a> -->
-                    <!-- Button trigger modal -->
                   </div>
                 </div>
               </form>
@@ -408,18 +404,16 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="modal-body">
-            <form action="" class="form">
-              <div class="row gy-3">
-                <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="ادخل كلمة المرور الجديدة">
-                </div>
-                <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="اعد إدخال كلمة المرور">
-                </div>
+          <form action="" class="form w-100">
+            <div class="row gy-3">
+              <div class="col-md-12">
+                <input type="text" class="form-control" placeholder="ادخل كلمة المرور الجديدة">
               </div>
-            </form>
-          </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control" placeholder="اعد إدخال كلمة المرور">
+              </div>
+            </div>
+          </form>
         </div>
         <div class="modal-footer">
           <button class="btn btn-primary round" data-bs-target="#register" data-bs-toggle="modal">تسجيل الدخول</button>

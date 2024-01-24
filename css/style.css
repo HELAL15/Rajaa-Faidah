@@ -284,8 +284,8 @@ section a.padding {
   margin-right: auto;
 }
 
-.modal-body .form {
-  padding: 5rem 3rem;
+.modal-body form.form {
+  padding: 5rem 3rem !important;
 }
 /*==================================================
 ================== contacts ========================
@@ -1482,9 +1482,9 @@ footer hr {
   justify-content: center;
   align-items: center;
 }
-.modal-content{
+/* .modal-content{
   width: 60%;
-}
+} */
 
 .modal-body{
   display: flex;
