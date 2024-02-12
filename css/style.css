@@ -57,12 +57,16 @@ h1,h2,h3,h4,h5,h6{
   border-radius: 50% !important;
   padding: 0.5rem 0.7rem;
 }
-
 body {
   overflow-x: hidden;
   direction: rtl;
 }
-
+.lang{
+  font-size: 1.5rem;
+}
+html[dir="ltr"] body{
+  direction: ltr !important;
+}
 .round {
   border-radius: 3.9375rem;
 }
