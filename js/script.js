@@ -47,6 +47,25 @@ window.addEventListener('scroll', changeBG);
 /*================================================
 ================== cart ==========================
 =================================================*/
+function updateTotalPrice() {
+  let total = 0;
+  let item_price = document.querySelectorAll('.item-price');
+  let total_price = document.querySelector('.total-price');
+
+  item_price.forEach((item) => {
+    let item_val = parseFloat(item.getAttribute('value'));
+    total +=  item_val;
+  });
+  console.log(total);
+
+  total_price.textContent = total.toFixed(2); 
+  total_price.setAttribute('value', total);
+}
+
+updateTotalPrice();
+
+
+// $(".cart_body .heart .add-cart"+id).toggleClass('active',true);
 
 
 let add_btn = document.querySelectorAll('.add-cart');
@@ -55,6 +74,7 @@ let add_btn = document.querySelectorAll('.add-cart');
 add_btn.forEach((btn) => {
   btn.addEventListener('click', () => {
     btn.classList.toggle('active');
+    // $(" .heart .add-cart").toggleClass('active',true);
     updateTotalPrice(); 
   });
 });
@@ -69,6 +89,16 @@ remove_from_cart.forEach((btn) => {
     updateTotalPrice(); 
   });
 });
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -142,7 +172,7 @@ $('.meetings .owl-carousel').owlCarousel({
   rtl: rtlValue,
   loop:true,
   // center: true,
-  margin:55,
+  margin:10,
   navText:["<i class='fa-solid fa-arrow-right mx-2'></i>", "<i class='fa-solid fa-arrow-left mx-2'></i>"],
   nav:true,
   dots: false,
@@ -212,21 +242,7 @@ var stop = setInterval(incCounter , 30);
 /*===========================================================*/
 
 
-function updateTotalPrice() {
-  let item_price = document.querySelectorAll('.item-price');
-  let total_price = document.querySelector('.total-price');
-  let total = 0;
 
-  item_price.forEach((item) => {
-    let item_val = parseFloat(item.getAttribute('value'));
-    total += item_val;
-  });
-
-  total_price.textContent = total.toFixed(2); 
-  total_price.setAttribute('value', total);
-}
-
-updateTotalPrice();
 
 
 

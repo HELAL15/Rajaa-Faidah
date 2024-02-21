@@ -493,6 +493,7 @@ header {
 }
 
 .img {
+  height: 70%;
   width: 100%;
   border-radius: 3.9375rem;
   overflow: hidden;
@@ -672,15 +673,18 @@ p.text-w {
   align-items: center;
   justify-content: center;
 }
-
+.owl-carousel .owl-stage-outer {
+  padding: 5rem 0;
+}
 .meetings .owl-item.active:nth-child(even) > div {
   margin-bottom:  unset;
 }
 .meetings .owl-item.active.center > div {
   height: 100%;
 }
-.meetings .item .card{
+.meetings  .card{
   height: 100% !important;
+  overflow: visible !important;
 }
 .meetings .item {
   height: 17rem;
@@ -688,10 +692,13 @@ p.text-w {
   background: var(--grey);
   overflow: hidden;
   position: relative;
-  -webkit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
-  clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  transform: skewY(-15deg);
+  /* -webkit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0); */
 }
-
+.meetings .card .title{
+  transform: skewY(-15deg);
+}
 .meetings .item a i {
   position: absolute;
   top: 50%;
